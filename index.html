@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>App con firebase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Inicia sesion</h1>
+    <button id="login">Inicia con Google</button>
+    <div id="root"></div>
+
+    <div id="guardar">
+        Guardar
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDeq0VMwbycROPdVgYYkkkSHedNy5_ED_c",
+            authDomain: "primerapp-ram.firebaseapp.com",
+            databaseURL: "https://primerapp-ram.firebaseio.com",
+            projectId: "primerapp-ram",
+            storageBucket: "primerapp-ram.appspot.com",
+            messagingSenderId: "750366495023"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
